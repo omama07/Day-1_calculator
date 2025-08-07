@@ -1,0 +1,39 @@
+#Day 1 calculator
+def get_number(prompt):
+    while True:
+        user_input = input(prompt)
+        if not user_input.strip():
+            print(" Input cannot be blank. Please enter a number.")
+            continue
+        try:
+            return float(user_input)
+        except ValueError:
+            print("Invalid input. Please enter a valid number (e.g., 5 or 3.14).")
+#Step 1 Ask the user's name
+name=input("Hello!What is your name?")
+#If input is empty use "User"
+if  not name.strip():
+    name="User"
+print(f"\nHi {name}! Let's do some math together.\n")
+#Step 2 Take input from users
+num1 =get_number("Enter the first number: ")
+num2 =get_number("Enter the second number: ")
+#Step 3 Perform Arithmetic Operations
+sum_result = num1 + num2
+difference = num1 - num2
+product = num1 * num2
+#Step 4 Handle Divison with error checking
+try:
+    division = num1 / num2
+except ZeroDivisionError:
+    division = None
+#Step 5 Display results
+print("Results:")
+print(f"Sum: {num1} + {num2} = {sum_result}")
+print(f"Difference: {num1} - {num2} = {difference}")
+print(f"Product: {num1} * {num2} = {product}")
+if division is not None:
+    print(f"Division: {division}\n")
+else:
+    print("Division is None\n")
+    print("\nThank you for using calculator. See you again!")
