@@ -1,6 +1,6 @@
 # Day-1_calculator
 Interactive Arithmetic Calculator with Error Handling
-This is a simple Python-based interactive calculator built as part of **Day 1** of the #ProSensiaInternship challenge.
+This is a simple Python-based interactive calculator built as part of **Day 1** of the ProSensiaInternship challenge.
 The calculator asks for the user's name and two numeric inputs, then performs basic arithmetic operations:
 - ➕ Sum  
 - ➖ Difference  
